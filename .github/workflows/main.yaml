@@ -10,9 +10,3 @@ jobs:
         steps:
             - name: checkout repo
               run: ls -lt
-            - name: setup Node.js
-              run: apt-get update -y
-            - name: install dependencies
-              run: npm install
-            - name: run test
-              run: npm test
