@@ -1,0 +1,10 @@
+name: test the workflow of github actions
+on:
+    push: 
+        branches: [ "main" ]
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: create file
+              run: touch myfile
