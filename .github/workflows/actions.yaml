@@ -2,8 +2,16 @@ name: pipeline-action
 on: push
 jobs:
     buidjob:
-      runs-on: ubuntu-latest
-      steps: 
-        - name: test-job
+        runs-on: centos-latest
+        steps: 
+        - name: build-job
           run: cat /etc/passwd
+    testjob:
+        needs: buidjob
+        runs-on: ubuntu-latest
+        steps:
+         - name: test-job
+           run: pwd
+    
+          
 
