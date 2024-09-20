@@ -5,7 +5,7 @@ jobs:
         runs-on: ubuntu-latest
         steps: 
         - name: build-job
-          run: cat /etc/passwd
+          run: car /etc/passwd
     testjob:
         needs: buidjob
         runs-on: ubuntu-latest
