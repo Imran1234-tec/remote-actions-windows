@@ -9,11 +9,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: checkout repo
-              uses: actions/checkout@v3
+              run: ls -lt
             - name: setup Node.js
-              uses: actions/setup-node@v3
-              with:
-                node-version: '16'
+              run: apt-get update -y
             - name: install dependencies
               run: npm install
             - name: run test
