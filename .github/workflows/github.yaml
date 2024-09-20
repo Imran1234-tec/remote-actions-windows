@@ -1,0 +1,13 @@
+name: pipeline-test-windows
+on:
+    push: 
+        branches: [ "main" ]
+    pull_request:
+        branches: [ "main" ]
+jobs: 
+    buildjob:
+        runs-on: ubuntu-latest
+        steps:
+            - name: build-job
+              run: mvn clean install 
+               
