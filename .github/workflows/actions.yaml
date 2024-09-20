@@ -2,7 +2,7 @@ name: pipeline-action
 on: push
 jobs:
     buidjob:
-        runs-on: centos-latest
+        runs-on: ubuntu-latest
         steps: 
         - name: build-job
           run: cat /etc/passwd
