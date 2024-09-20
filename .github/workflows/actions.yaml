@@ -1,0 +1,9 @@
+name: pipeline-action
+on: push
+jobs:
+    buidjob:
+      runs-on: ubuntu-latest
+      steps: 
+        - name: test-job
+          run: cat /etc/passwd
+
